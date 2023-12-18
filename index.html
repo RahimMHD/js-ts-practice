@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Vite + TS</title>
+    <script src="https://kit.fontawesome.com/61d885fdfb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- project 1 digital clock -->
+    <h1 id="Clock" style="font-size: 3rem; text-align: center;">The Clock Time</h1>
+    <p id="time" style="text-align: center; font-size: 2rem;"></p>
+
+    <!-- project 2 clock  -->
+    <div id="circle">
+        <div id="point"></div>
+        <div id="hour"></div>
+        <div id="minuts"></div>
+        <div id="second"></div>
+    </div>
+
+    <!-- project 3 To DO App  -->
+
+    <div id="list">
+        <div class="enter">
+            <input type="text" placeholder="Enter Your List" id="tippeList"/>
+            <input type="button" value=">" id="create" />
+            <input type="button" value="x" id="delet">
+        </div>
+    </div>
+
+    <!-- project 4  -->
+
+    <div class="tracker" id="tracker">
+        <div class="darkMode">
+            <input type="button" value="" id="darkmode" class="toggle">
+        </div>
+
+        <h1>Expense Tracker</h1>
+        <!-- start the result  -->
+        <div class="yourBlnc">
+            <img src="" alt="">
+            <div id="blc">
+                <p>YOUR BALANCE</p>
+                <span id="yourIncome"></span>
+            </div>
+        </div>
+        <div class="diffrent" id="diffrent">
+            <div id="income">
+                <p>INCOME</p>
+                <span id="mounyPlus"></span>
+            </div>
+            <span class="bar"></span>
+            <div id="expense">
+                <p>EXPENCES</p>
+                <span id="mounyMinus"></span>
+            </div>
+        </div>
+        <!-- start history  -->
+        <div id="history">
+            <h3>History</h3>
+            <hr>
+            <div class="item" id="historyItem">
+
+            </div>
+        </div>
+        <!-- start add amount  -->
+        <div class="addNew">
+            <h2>Add new transaction</h2>
+            <hr>
+            <div class="Descripe">
+                <label for="">Description</label>
+                <input type="text" name="descripe" id="description"  placeholder="Enter youe description">
+            </div>
+            <form class="amount">
+                <label for="">
+                    Amount
+                    <p>(-100 = expense, 100 = income)</p>
+                </label>
+                <input type="number" name="mouny" id="amountInput" placeholder="Enter Amount">
+                <button id="addbtn" type="submit">Add transaction</button>
+            </form>
+        </div>
+    </div>    
+
+    <!-- project 5 vowel counter -->
+
+    <div class="vowel-counter">
+        <div class="titleCounter">
+            <h1>Characters Counter</h1>
+        </div>
+        <textarea name="" id="text-counter" cols="40" rows="10" required placeholder="Type to count characters"></textarea>
+        <p id="result-characters" class="result-characters">0</p>
+        <div class="actions">
+            <input id="with-space" type="button" value="Characters including spaces">
+            <input id="spaces" type="button" value="Blank Spaces">
+            <input id="without-space" type="button" value="Characters excluding spaces">
+            <input id="vowels" type="button" value="Vowels">
+        </div>
+        <input id="reset-vowel" type="reset" value="Reset">
+    </div>
+
+    <!-- project 6 Generate Pig Latine  -->
+
+    <div class="translat">
+        <div class="image-Pig">
+            <h1 class="title-Pig">Pig Latine Translator</h1>
+            <img src="" alt="">
+        </div>
+        <form class="translate-text">
+            <textarea name="" id="text-english" cols="30" rows="10" placeholder="write somthing (English)"></textarea>
+            <textarea id="output-in-latin" class="outputLatin" cols="30" rows="10" placeholder="Output (Pig latine)" readonly="yes"></textarea>
+        </form>
+        <h3 class="thanks">Thanks for use this app</h3>
+    </div>
+
+
+    <!-- project 7 rock paper scissors -->
+
+    <div class="header">
+        <div class="result">
+            <div id="forYou"></div>
+            <div>|</div>
+            <div id="forcomputer"></div>
+        </div>
+        <h2 id="WinLose">Play</h2>
+        <button id="btnRslt"><i class="fa-solid fa-rotate-left"></i></button>
+        <div class="Start">
+            <div id="yourChoice" class="move">
+                <div id='player1' class="ply"><i class="fa-solid fa-hand-back-fist"></i></div>
+            </div>
+            <div id="aiChoice" class="move">
+                <div id='player2' class="ply"><i class="fa-solid fa-hand-back-fist"></i></div>
+            </div>
+        </div>
+        <div id="thechoiceGame">
+            <div id="rock"><i class="fa-sharp fa-regular fa-hand-back-fist"></i></div>
+            <div id="paper"><i class="fa-regular fa-hand"></i></div>
+            <div id="scisser"><i class="fa-regular fa-hand-scissors"></i></div>
+        </div>
+    </div>
+
+    <!-- project 8 Recipes App  -->
+
+    <div class="recipes">
+        <h1>-- The Recipes Box --</h1>
+        <div class="box">
+            <ul class="listofFood">
+            </ul>
+
+            <p class="the-food">A box for all your food recipes</p>
+
+            <div class="btn-of-plus-food">
+                <button id="AddRecipe">+ Recipe</button>
+            </div>
+        </div>
+        <!--angel for edit the food  -->
+        <div class="overly">
+            <div class="boxEdit" id="boxEdit">
+                <h2>Edit recipe</h2>
+                <form action="">
+                    <label for="recipe">Recipe:</label>
+                    <input name="recipe" type="text" id="recipe" placeholder="Salad">
+        
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea name="ingredients" id="ingredients" cols="30" rows="6"></textarea>
+                </form>
+                <form action="" class="btnEdit">
+                    <button type="button" id="close">Close</button>
+                    <button type="button" id="add">Add</button>
+                    <button type="button" id="save">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- project 7 Visualize Data With a Bar Chart -->
+
+
+    <!-- <div class="fitness-tracker">
+        <h1>Fitness Tracker (Line Graphs)</h1>
+        <h3>Sports track</h3>
+        <ul class="sports">
+            <li id="cycling">Cycling</li>
+            <li id="running">Running</li>
+            <li id="swimming">Swimming</li>
+            <li id="walking">Walking</li>
+        </ul>
+
+        <p class="howmanytoday">How much <span id="sportToday">running</span> have you done today?</p>
+
+        <form action="">
+            <input type="text" name="" id="">
+        </form>
+    </div> -->
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,881 @@
+:root {
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #060608;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* projet 2  */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* start projects */
+
+#circle {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: black;
+  border-radius: 100%;
+  position: relative;
+}
+
+#circle #point {
+  position: absolute;
+  background-color: cyan;
+  width: 20px;
+  height: 20px;
+  left: 90px;
+  top: 90px;
+  border-radius: 100%;
+}
+
+#circle #hour {
+  position: absolute;
+  width: 5px;
+  height: 55px;
+  background-color: cyan;
+  top: 45px;
+  left: 97.5px;
+}
+
+#circle #minuts {
+  position: absolute;
+  width: 5px;
+  height: 65px;
+  background-color: cyan;
+  top: 35px;
+  left: 97.5px;
+}
+
+#circle #second {
+  position: absolute;
+  width: 3px;
+  height: 75px;
+  background-color: red;
+  top: 25px;
+  left: 97.5px;
+}
+
+
+/* project 3  */
+
+#list {
+  width: 500px;
+  margin: 60px auto;
+}
+
+#list .enter {
+  display: flex;
+}
+
+#list #tippeList {
+  width: 89%;
+  padding: 20px 10px;
+  background-color: black;
+  font-size: 1.5rem;
+  color: cyan;
+}
+
+#list #create {
+  background-color: black;
+  color: cyan;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 20px 20px;
+}
+#list #delet {
+  background-color: black;
+  color: cyan;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 5px;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+#list .work {
+  font-size: 1.2rem;
+  color: cyan;
+  background-color: black;
+  width: 480px;
+  padding: 15px 10px;
+  font-weight: 500;
+  margin: 5px auto;
+  position: relative;
+}
+
+#list .work .deletWork {
+  position: absolute;
+  padding: 0px 10px;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 100%;
+  right: 0px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+/* project 4  */
+
+.tracker {
+  width: 450px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  box-shadow: 7px 7px 15px #424141;
+  padding: 10px 10px;
+  /* background-color: black;
+  color: white; */
+}
+
+.tracker .darkMode {
+  width: 50px;
+  background-color: black;
+  border-radius: 25px;
+  margin: 20px auto;
+}
+
+.tracker .darkMode .toggle {
+  background-color: white;
+  border-radius: 50px;
+  transition: all 300ms ease-out;
+  cursor: pointer;
+}
+
+.tracker h1 {
+  margin-bottom: 50px;   
+}
+
+.tracker .yourBlnc {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.tracker .yourBlnc img {
+  width: 90px;
+  margin: 0 auto;
+}
+.tracker .yourBlnc #blc {
+  width: 50%;
+  max-width: 85%;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 10px auto;
+}
+.tracker .yourBlnc #blc p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tracker .diffrent {
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px 0;
+  border-radius: 15px;
+}
+.tracker .diffrent div p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tracker .diffrent .bar {
+  height: 50px;
+  width: 2px;
+  background-color: #424141;
+
+}
+.tracker .diffrent #income {
+  width: 50%;
+  max-width: 70%;
+}
+.tracker .diffrent #expense {
+  width: 50%;
+  max-width: 70%;
+}
+.tracker .diffrent #income span {
+  color: #04eb04;
+}
+.tracker .diffrent #expense span {
+  color: #ff3737;
+}
+
+#history {
+  margin-top: 25px;
+}
+#history h3 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#history .item {
+  display: flex;
+  flex-direction: column;
+}
+#history .item .del {
+  background-color: white;
+  font-weight: 600;
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 10px 2%;
+  border-radius: 10px;
+  transition:ease-in-out 0.3s;
+  position: relative;
+}
+#history .item .del:hover {
+  width: 89%;
+}
+#history .item .win {
+  border-left: 4px #04eb04 solid;
+}
+#history .item .lose {
+  border-left: 4px #ff3737 solid;
+}
+
+#history .item .del .desc {
+  margin-left: 10px;
+}
+#history .item .del .mouny {
+  margin-right: 15px;
+}
+#history .item .del .MWin {
+  color: #04eb04;
+}
+#history .item .del .MLose {
+  color: #ff3737;
+}
+#history .item .del #remove {
+  position: absolute;
+  background-color: #ff3737;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  right: -40px;
+  top: 10%;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 80%;
+  width: 40px;
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+#history .item .del #remove:hover {
+  background-color: #a22929;
+} 
+#history .item .del:hover #remove {
+  display: block;
+}
+
+
+.addNew h2 {
+  margin-bottom: 10px;
+}
+.addNew .Descripe {
+  display: flex;
+  flex-direction: column;
+}
+.addNew .Descripe label {
+  font-weight: 600;
+  text-align: start;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.addNew .Descripe input {
+  margin:10px 5px;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+
+.addNew .amount {
+  display: flex;
+  flex-direction: column;
+}
+.addNew .amount label {
+  font-weight: 600;
+  text-align: start;
+  margin:15px 0 0 5px;
+}
+.addNew .amount input {
+  margin:10px 5px 10px;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+.addNew .amount label p {
+  margin: 5px 0 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.addNew button {
+  width: 98%;
+  padding: 10px 10px;
+  background-color: #0040ff;
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.addNew button:hover {
+  background-color: #2a5efb;
+}
+
+.backgroundChange {
+  background: black;
+  color: white;
+  transition: ease all 0.5s;
+
+}
+
+
+/* project 5 vowel counter  */
+
+
+.vowel-counter {
+  width: 600px;
+  margin: 150px auto;
+  background-color: #6a51d8;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 10px 10px 10px #424141;
+  border-radius: 20px;
+}
+
+.vowel-counter .titleCounter {
+  padding: 15px;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+.vowel-counter textarea {
+  padding: 10px;
+  box-shadow: 6px 6px 10px #424141;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  resize: vertical;
+}
+
+.vowel-counter textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.vowel-counter .actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.vowel-counter .actions input {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  box-shadow: 5px 5px 10px #424141;
+  cursor: pointer;
+  color: #4807ec;
+}
+
+.vowel-counter #result-characters {
+  width: 200px;
+  margin: 20px auto;
+  padding: 15px 5px;
+  background-color: white;
+  color: #4807ec;
+  font-size: 2.8rem;
+  font-weight: 800;
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px #424141;
+}
+
+.vowel-counter #reset-vowel {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 7px 7px 10px #424141;
+  color: #4807ec;
+}
+
+
+
+
+/* project 6 Generate Pig Latine  */
+
+.translat {
+  width: 70%;
+  text-align: center;
+  margin: 40px auto 50px;
+  padding: 20px;
+  background-color:lightskyblue;
+  box-shadow: 10px 10px 15px #424141;
+  border-radius: 20px;
+}
+
+.translat .image-Pig {
+  max-width: 500px;
+  margin: 10px auto 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.translat .image-Pig h1 {
+  font-size: 3rem;
+}
+
+.translat .image-Pig img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.translat .translate-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.translat .translate-text textarea {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 10px;
+  resize: vertical;
+  box-shadow: 5px 5px 10px #424141;
+}
+
+.translat .translate-text .outputLatin {
+  padding: 10px;
+  background-color: #aeaeae;
+  color: white;
+  cursor: auto;outline: none;
+}
+
+.translat .translate-text .outputLatin span {
+  margin-top: 10px;
+}
+
+.translat .click {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.translat h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+
+
+/* project 7 rock paper scissors */
+
+.header {
+  /* background-image: url(../image/istockphoto-1286354786-612x612.jpg); */
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.header .result {
+  width: 150px;
+  height: 100px;
+  border: 3px solid white;
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header h2 {
+  margin-bottom: 0px;
+}
+.losegame {
+  animation: 1.5s scaleLose;
+}
+@keyframes scaleLose {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.4);}
+  100% {transform: scale(1);}
+}
+.wingame {
+  animation: 1.5s scaleWin;
+}
+@keyframes scaleWin {
+  0% {transform: scale(1);}
+  50% {transform: scale(2);}
+  100% {transform: scale(1);}
+}
+.header button {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 200ms;
+}
+.header button:hover {
+  transform: scale(1.3);
+  color: cyan;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 50px;
+}
+.header .Start {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.header .Start .move {
+  margin-top: 40px;
+  font-size: 6rem;
+  font-weight: 600;
+  height: fit-content;
+  transition: all 300ms ease-in-out;
+}
+.header .Start .move #player1 {
+  transform: rotate(120deg);
+}
+.header .Start .move #player2 {
+  transform: translateY(0px) scale3d(-1, 1, 1) rotate(120deg);
+}
+.startNow {
+  position: relative;
+  animation-name: moveUp;
+  animation-duration: 0.7s;
+  animation-iteration-count:calc(3);
+}
+@keyframes moveUp {
+  0% {top: 0px} 
+  50% {top: -30px;} 
+  100% {top: 0px;}
+}
+.header #thechoiceGame {
+  width: 400px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header #thechoiceGame div i {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 5px;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out;
+}
+.header #thechoiceGame div:last-child {
+  transform: rotate(90deg);
+}
+.header #thechoiceGame div i:hover {
+  transform: scale(130%);
+  box-shadow: 0px 0px 18px #fbfafa98;
+}
+
+
+
+
+
+/* project 8 Recipes App */
+
+.recipes {
+  background-image: url(./image/vintage-old-rustic-cutlery-dark.jpg);
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.recipes h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.recipes .box {
+  background-color: #025826;
+  color: white;
+  width: 40%;
+  padding: 40px 40px 20px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px #101010;
+}
+
+.recipes .box .listofFood {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recipes .box .listofFood .food {
+  background-color: #eee;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  transition: all ease-in-out 300ms;
+}
+
+.recipes .box .listofFood .food .name-Food {
+  background: linear-gradient(to right, #343a40, #495057, #6c757d, #adb5bd);  
+  color: #025826;
+  padding: 5px 10px ;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.recipes .box .listofFood .food .name-Food #nameFd {
+  transition: all ease 300ms;
+  cursor: pointer;
+  color: #eee;
+}
+.recipes .box .listofFood .food .name-Food #nameFd:hover {
+  color: #70e000;
+  padding-bottom: 5px;
+}
+
+.recipes .box .listofFood .food .menuFood  {
+  background-color: #eee;
+  color: #025826;
+  padding: 15px 15px 5px;
+  transition: all 300ms ease;
+}
+
+.recipes .box .listofFood .food .menuFood p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.recipes .box .listofFood .food .menuFood ul {
+  margin-bottom: 15px;
+}
+.recipes .box .listofFood .food .menuFood ul li {
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor:default;
+  transition: all ease 300ms;
+}
+.recipes .box .listofFood .food .menuFood ul li:hover {
+  transform: translateX(10px);
+}
+.recipes .box .listofFood .food .menuFood .deletEdit {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.recipes .box .listofFood .food .menuFood .deletEdit button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 10px;
+  transition: all ease-in-out 200ms;
+  font-family: 'Pacifico', cursive;
+  background-color: #fff;
+}
+.recipes .box .listofFood .food .menuFood .deletEdit .deletF {
+  color: #a22929;
+  border: solid 3px #a22929;
+}
+.recipes .box .listofFood .food .menuFood .deletEdit .deletF:hover {
+  color: white;
+  background-color: #a22929;
+}
+.recipes .box .listofFood .food .menuFood .deletEdit .editF {
+  color: #025826;
+  border: solid 3px #025826;
+}
+.recipes .box .listofFood .food .menuFood .deletEdit .editF:hover {
+  color: white;
+  background-color: #025826;
+}
+
+.recipes .box .listofFood .food #rcp {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #025826;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.recipes .box .the-food {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.recipes .box .btn-of-plus-food {
+  text-align: center;
+}
+.recipes .box .btn-of-plus-food button {
+  width: 120px;
+  padding: 5px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: white 5px solid;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #025826;
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+  transition:all ease-in 200ms;
+}
+.recipes .box .btn-of-plus-food button:hover {
+  background-color: white;
+  color: #025826;
+}
+
+/* angel for edit the food  */
+.recipes .overly {
+  position: absolute;
+  background-color: #024d026d;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.recipes .overly .boxEdit {
+  background-color: #eee;
+  width: 35%;
+  margin: 30% 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: #025826;
+  border-radius: 20px;
+  transition: all ease-in-out 400ms;
+}
+
+.recipes .overly .boxEdit h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.recipes .overly .boxEdit form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 30px;
+  width: 90%;
+}
+.recipes .overly .boxEdit form label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.recipes .overly .boxEdit form input {
+  padding: 10px;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.recipes .overly .boxEdit form textarea {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  resize: vertical;
+}
+.recipes .overly .boxEdit form.btnEdit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.recipes .overly .boxEdit form.btnEdit button {
+  width: 100px;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+.recipes .overly .boxEdit form.btnEdit #close {
+  color: #3c3c3c;
+  border:5px solid #3c3c3c;
+}
+.recipes .overly .boxEdit form.btnEdit #close:hover {
+  background-color: #3c3c3c;
+  color: white;
+}
+.recipes .boxEdit form.btnEdit #save {
+  color: #04eb04;
+  border: #04eb04 solid 5px;
+}
+.recipes .overly .boxEdit form.btnEdit #save:hover {
+  background-color: #04eb04;
+  color: white;
+}
+
+
+
+
+/* 'Pacifico', cursive */
+
+
+
+
+
+
